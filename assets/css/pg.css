@@ -158,6 +158,17 @@ table tr {
     background-color: #4ce93d !important;
   }
 
+  .print-reciept {
+    margin-top: 12px;
+    background-color: dodgerblue;
+    color: #fff;
+    border: 0;
+    border-radius: 8px;
+    padding: .9rem;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
   @media (max-width: 750px) {
     .transaction-card {
       padding: 1.3rem;
