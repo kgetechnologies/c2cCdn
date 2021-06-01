@@ -24,7 +24,7 @@
 }
 
 /* Aligning user name to middle */
-#pdfDownload .pb2 {
+#PdfDownload .pb2 {
   text-align: center;
   margin-bottom: 10px;
   font-size: 18px;
@@ -69,6 +69,91 @@ table tr {
   font-size: 17px;
   color: #fff;
 }
+
+/* Start of Transaction Result styles */
+
+  .transaction-card {
+    margin: auto;
+    width: 700px;
+    padding: 3rem;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+  }
+
+  .company-text {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .transaction-card h3 {
+    margin: 10px 0;
+    font-size: 20px;
+    color: #1f1e1e;
+  }
+
+  .font-bold {
+    font-weight: bolder;
+  }
+
+  .transaction-outline {
+    font-size: 18px;
+    color: #868686;
+  }
+
+  .transaction-outline .text-success {
+    color: #4edf10 !important;
+  }
+
+  .transaction-outline .transaction-id {
+    font-weight: bolder;
+    color: #1f1e1e;
+  }
+
+  .transaction-info-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  .transaction-info-container .transaction-info-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 18px;
+  }
+
+  .transaction-info-group {
+    color: #868686;
+  }
+
+  .transaction-info-group .info-title {
+    color: #57575a;
+    margin-bottom: 10px;
+  }
+
+  .summary-text {
+    font-size: 20px;
+    margin-top: 1.5rem;
+  }
+
+  .summary-card {
+    font-size: 17px;
+  }
+
+  .summary-card .summary-item-group {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+    background-color: #e6e6e6;
+    border-bottom: 1.5px solid #868686;
+  }
+
+  .bg-success {
+    background-color: #44db37 !important;
+  }
+
+/* Transaction Result styles ends */
+
 
 /* On Medium large devices increasing 
   the transaction reciept width */
