@@ -1,4 +1,4 @@
-@charset "UTF-8";
+﻿@charset "UTF-8";
 /*!
  * Bootstrap v4.6.0 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -5553,7 +5553,6 @@ input[type=button].btn-block {
   flex: 1 1 auto;
   min-height: 1px;
   padding: 2.25rem;
-  margin-bottom:1rem;
 }
 
 .card-title {
@@ -52859,7 +52858,7 @@ i {
   justify-content: flex-end;
 }
 .card.card-custom > .card-body {
-  padding: 1rem 2.25rem;
+  padding: 2rem 2.25rem;
 }
 .card.card-custom > .card-footer {
   background-color: transparent;
@@ -64232,7 +64231,6 @@ code {
 }
 
 .dropdown-menu {
-   
   left: 0 /*rtl:ignore*/;
   /*rtl:raw:
   right: auto;
@@ -65484,8 +65482,6 @@ code {
   margin-right: -0.8rem;
   /*rtl:ignore*/
   margin-left: 65px;
-  margin-top:-110px;
-  
 }
 .datatable.datatable-default > .datatable-table > .datatable-head .datatable-row > .datatable-cell .dropdown .dropdown-menu.dropdown-menu-left,
 .datatable.datatable-default > .datatable-table > .datatable-body .datatable-row > .datatable-cell .dropdown .dropdown-menu.dropdown-menu-left,
@@ -66089,13 +66085,10 @@ code {
   height: 12px;
 }
 
-    .checkbox > span {
-        display: inline-block;
-        padding-right: 10px;
-        white-space: nowrap;
-        background-color: #EBEDF3;
-        border: 1px solid transparent;
-    }
+.checkbox > span {
+  background-color: #EBEDF3;
+  border: 1px solid transparent;
+}
 .checkbox > input:focus ~ span {
   border: 1px solid transparent;
 }
@@ -83314,7 +83307,7 @@ body {
     box-shadow: none;
   }
   .header-fixed.header-bottom-enabled .header {
-    height: 145px;
+    
     -webkit-box-shadow: 0px 10px 30px 0px rgba(82, 63, 105, 0.08);
     box-shadow: 0px 10px 30px 0px rgba(82, 63, 105, 0.08);
   }

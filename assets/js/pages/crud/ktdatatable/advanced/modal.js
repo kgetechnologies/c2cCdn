@@ -289,11 +289,11 @@ var KTDatatableModal = function() {
         var modal = datatable.closest('.modal');
 
         $('#kt_datatable_search_status_2').on('change', function() {
-            datatable.search($(this).val().toLowerCase(), 'isactivated');
+            datatable.search($(this).val().toLowerCase(), 'Status');
         });
 
         $('#kt_datatable_search_type_2').on('change', function() {
-            datatable.search($(this).val().toLowerCase(), 'Location');
+            datatable.search($(this).val().toLowerCase(), 'Type');
         });
 
         $('#kt_datatable_search_status_2, #kt_datatable_search_type_2').selectpicker();
