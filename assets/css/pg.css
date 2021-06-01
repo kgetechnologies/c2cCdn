@@ -1,0 +1,80 @@
+/* Styling the cookie consent text */
+#cookie-consent {
+  font-size: 15px;
+  line-height: 35px;
+}
+
+/* Styling the cookie consent button */
+#cookie-consent #consent{
+  margin: 5px;
+  background-color: dodgerblue;
+  color: #fff;
+  padding: 13px;
+  font-size: 14px;
+}
+
+#cookie-consent #learn-more {
+  font-size: 15px;
+}
+
+/* Giving margin bottom for container inorder
+  to separate it from footer */
+.container-fluid {
+  margin-bottom: 3rem !important;
+}
+
+/* Aligning user name to middle */
+#pdfDownload .pb2 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+/* Aligning transaction amount message to center */
+#PdfDownload .pb-2.col-md-6 {
+  width: 100%;
+  margin: auto;
+}
+
+/* Aligning transaction summary text to center */
+.alert.alert-info {
+  margin-left: 50%;
+  transform: translateX(-50%);
+  font-size: 20px;
+}
+
+/* Aligning table to center */
+table {
+  width: 100%;
+  margin: auto;
+}
+
+/* Giving space between table data in each table row */
+table tr {
+  display: flex;
+  justify-content: space-between;
+  font-size: 17px;
+}
+
+/* Making the text bolder */
+.font-weight-bold {
+  font-weight: 800 !important;
+}
+
+
+/* Aligning the button to center */
+.container-fluid button {
+  margin-left: 50%;
+  transform: translateX(-50%);
+  font-size: 17px;
+  color: #fff;
+}
+
+/* On Medium large devices increasing 
+  the transaction reciept width */
+@media (min-width: 768px) {
+  #PdfDownload .col-md-6 {
+    -webkit-box-flex: 0;
+    max-width: 70%;
+  }
+}
