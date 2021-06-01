@@ -97,7 +97,7 @@ table tr {
 
   .transaction-outline {
     font-size: 18px;
-    color: #868686;
+    color: #6e6c6c;
   }
 
   .transaction-outline .text-success {
@@ -112,7 +112,7 @@ table tr {
   .transaction-info-container {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 30px;
   }
 
   .transaction-info-container .transaction-info-group {
@@ -123,21 +123,22 @@ table tr {
   }
 
   .transaction-info-group {
-    color: #868686;
+    color: #5e5b5b;
   }
 
   .transaction-info-group .info-title {
-    color: #57575a;
+    color: #39393b;
     margin-bottom: 10px;
   }
 
   .summary-text {
+    color: #202020;
     font-size: 20px;
-    margin-top: 1.5rem;
+    margin-top: 22px;
   }
 
   .summary-card {
-    font-size: 17px;
+    font-size: 16px;
   }
 
   .summary-card .summary-item-group {
@@ -145,11 +146,43 @@ table tr {
     justify-content: space-between;
     padding: 1.5rem;
     background-color: #e6e6e6;
+    border-radius: 4px;
     border-bottom: 1.5px solid #868686;
   }
 
+  .summary-item-group :first-child {
+    color: #131212;
+  }
+
   .bg-success {
-    background-color: #44db37 !important;
+    background-color: #4ce93d !important;
+  }
+
+  @media (max-width: 750px) {
+    .transaction-card {
+      padding: 1.3rem;
+      width: 90%;
+    }
+
+    .transaction-info-container {
+      flex-direction: column;
+    }
+
+    .transaction-info-group {
+      margin-bottom: 20px;
+    }
+
+    .company-text {
+      margin-bottom: 15px;
+    }
+
+    .summary-text {
+      margin-top: -2px;
+    }
+
+    .summary-item-group {
+      flex-wrap: wrap;
+    }
   }
 
 /* Transaction Result styles ends */
