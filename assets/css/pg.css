@@ -128,6 +128,7 @@ table tr {
 
   .transaction-info-group .info-title {
     color: #39393b;
+    font-weight: 500;
     margin-bottom: 10px;
   }
 
@@ -151,6 +152,7 @@ table tr {
   }
 
   .summary-item-group :first-child {
+    font-weight: 430;
     color: #131212;
   }
 
@@ -164,7 +166,7 @@ table tr {
     color: #fff;
     border: 0;
     border-radius: 8px;
-    padding: .9rem;
+    padding: 1rem;
     font-size: 16px;
     cursor: pointer;
   }
