@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <base href="">
@@ -13,7 +13,7 @@
         <link href="https://cdn.paysecurely.online/assets/plugins/custom/prismjs/prismjs.bundle.css" rel="stylesheet" type="text/css">
         <link href="https://cdn.paysecurely.online/assets/css/style.bundle.css" rel="stylesheet" type="text/css">
 
-        <link rel="shortcut icon" href="https://cdn.paysecurely.online/assets/media/logos/favicon.ico">
+        <link rel="shortcut icon" href="https://cdn.paysecurely.online/assets/media/logos/c2c/favicon.ico">
         <link rel="stylesheet" href="https://cdn.paysecurely.online/assets/css/pg.css" type="text/css">
         <script src="https://cdn.paysecurely.online/assets/js/pg.js"></script>
 
@@ -30,7 +30,7 @@
         <div id="kt_header_mobile" class="header-mobile bg-primary header-mobile-fixed">
             <!--begin::Logo-->
             <a href="index.html">
-                <img alt="Logo" src="https://cdn.paysecurely.online/assets/media/logos/c2c.png" class="max-h-30px">
+                <img alt="Logo" src="https://cdn.paysecurely.online/assets/media/logos/c2c/logo.png" class="max-h-30px">
             </a>
         </div>
         <!--end::Header Mobile-->
@@ -48,7 +48,7 @@
                                 <div class="d-none d-lg-flex align-items-center mr-3">
                                     <!--begin::Logo-->
                                     <a href="index.html" class="mr-20">
-                                        <img alt="Logo" src="https://cdn.paysecurely.online/assets/media/logos/c2c.png" class="max-h-35px">
+                                        <img alt="Logo" src="https://cdn.paysecurely.online/assets/media/logos/c2c/logo.png" class="max-h-35px">
                                     </a>
                                     <!--end::Logo-->
                                 </div>
@@ -117,18 +117,10 @@
                 <!-- End of summary card -->
             </div>
             <!-- End of transaction card -->
-            <button class="print-reciept">Print reciept</button>
+            <button class="print-reciept" id="print-btn">
+                Print reciept
+            </button>
         </div>
-    
-        <script type="text/javascript">
-            var doc = new jsPDF();
-        
-            function saveDiv(divId, title) {
-                doc.fromHTML(`<html><head><title>${title}</title></head><body>` + document.getElementById(divId).innerHTML + `</body></html>`);
-                doc.save('div.pdf');
-            }
-        </script>
-    
     
         <div class="footer bg-white py-4 d-flex flex-lg-column" id="kt_footer">
             <!--begin::Container-->
@@ -164,7 +156,10 @@
         <script src="https://cdn.paysecurely.online/assets/js/jspdf.umd.min.js" ></script>
     
         <script src="https://cdn.paysecurely.online/assets/js/bootstrap.bundle.min.js" ></script>
-    
+        
+        <!-- Added html2canvas cdn -->
+        <script src="https://cdn.paysecurely.online/assets/js/html2canvas.min.js"></script>
+
         <!--<script>var HOST_URL = "https://preview.keenthemes.com/metronic/theme/html/tools/preview";</script>-->
         <!--begin::Global Config(global config for global JS scripts)-->
         <script>var KTAppSettings = { "breakpoints": { "sm": 576, "md": 768, "lg": 992, "xl": 1200, "xxl": 1200 }, "colors": { "theme": { "base": { "white": "#ffffff", "primary": "#6993FF", "secondary": "#E5EAEE", "success": "#1BC5BD", "info": "#8950FC", "warning": "#FFA800", "danger": "#F64E60", "light": "#F3F6F9", "dark": "#212121" }, "light": { "white": "#ffffff", "primary": "#E1E9FF", "secondary": "#ECF0F3", "success": "#C9F7F5", "info": "#EEE5FF", "warning": "#FFF4DE", "danger": "#FFE2E5", "light": "#F3F6F9", "dark": "#D6D6E0" }, "inverse": { "white": "#ffffff", "primary": "#ffffff", "secondary": "#212121", "success": "#ffffff", "info": "#ffffff", "warning": "#ffffff", "danger": "#ffffff", "light": "#464E5F", "dark": "#ffffff" } }, "gray": { "gray-100": "#F3F6F9", "gray-200": "#ECF0F3", "gray-300": "#E5EAEE", "gray-400": "#D6D6E0", "gray-500": "#B5B5C3", "gray-600": "#80808F", "gray-700": "#464E5F", "gray-800": "#1B283F", "gray-900": "#212121" } }, "font-family": "Poppins" };</script>
@@ -182,7 +177,8 @@
         <!--end::Page Scripts-->
         <!--end::Body-->
         <svg id="SvgjsSvg1001" width="2" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" style="overflow: hidden; top: -100%; left: -100%; position: absolute; opacity: 0;"><defs id="SvgjsDefs1002"></defs><polyline id="SvgjsPolyline1003" points="0,0"></polyline><path id="SvgjsPath1004" d="M-1 200L-1 200C-1 200 68.83333333333333 200 68.83333333333333 200C68.83333333333333 200 137.66666666666666 200 137.66666666666666 200C137.66666666666666 200 206.5 200 206.5 200C206.5 200 275.3333333333333 200 275.3333333333333 200C275.3333333333333 200 344.16666666666663 200 344.16666666666663 200C344.16666666666663 200 413 200 413 200C413 200 413 200 413 200 "></path></svg>
-    
+
+        
         <script type="text/javascript">
             $(function () {
                 if (document.cookie.indexOf("cookies") < 0) {
