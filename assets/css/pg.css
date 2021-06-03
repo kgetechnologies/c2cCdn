@@ -72,6 +72,7 @@ table tr {
 
 /* Start of Transaction Result styles */
 
+  /* Outer card which contains the all the information */
   .transaction-card {
     margin: auto;
     width: 700px;
@@ -104,17 +105,25 @@ table tr {
     color: #4edf10 !important;
   }
 
+  /* Making transaction id look a little bolder */
   .transaction-outline .transaction-id {
     font-weight: bold;
     color: #202020;
   }
 
+  /* Transaction info container is made to display in a single row
+    with space between each information group. */
   .transaction-info-container {
     display: flex;
     justify-content: space-between;
     margin: 22px 0;
   }
 
+  /* Each transaction info group is displayed in column format.
+    eg. Payment Request Date
+            06-01-2021
+            00:55:10
+  */
   .transaction-info-container .transaction-info-group {
     display: flex;
     flex-direction: column;
@@ -122,6 +131,7 @@ table tr {
     color: #5e5b5b;
   }
 
+  /* Each title in information group is bolded. */
   .transaction-info-group .info-title {
     color: #39393b;
     font-weight: bold;
@@ -138,6 +148,8 @@ table tr {
     margin: 22px 0;
   }
 
+  /* Each summary item group is displayed in a single row
+    with space between */
   .summary-card .summary-item-group {
     display: flex;
     justify-content: space-between;
@@ -148,14 +160,16 @@ table tr {
     border-bottom: 1.5px solid #868686;
   }
 
+  /* All first child in summary item group is bolded. */
   .summary-item-group > :first-child {
-    font-weight: 600;
+    font-weight: bold;
   }
 
   .bg-success {
     background-color: #4ce93d !important;
   }
 
+  /* Styling the print reciept button */
   .print-reciept {
     margin-top: 12px;
     background-color: dodgerblue;
@@ -167,42 +181,47 @@ table tr {
     cursor: pointer;
   }
 
+
   @media (max-width: 750px) {
+    /* On devices with maximum width of 750px setting the width of 
+      transaction card to 90% for good UI. */
     .transaction-card {
-      padding: 1.3rem;
       width: 90%;
     }
 
+    /* Group in transaction info container are displayed in column format
+      and each column is left aligned.
+      eg. Bank Ref no
+          3343434
+          
+          Payment Request Date
+          06-01-2021
+          00:55:10
+      */
     .transaction-info-container {
       flex-direction: column;
       align-items: flex-start;
     }
 
+    /* Except the last child of transaction info container, rest
+    of the groups are given a bottom margin */
     .transaction-info-container > :not(:last-child) {
       margin-bottom: 18px;
     }
 
-    .transaction-info-group {
-      align-items: flex-start !important;
+    /* Span element in the transaction info group is also left aligned. */
+    .transaction-info-group span{
+      align-self: flex-start;
     }
 
     .company-text {
       margin-bottom: 15px;
     }
 
+    /* Wrapping text in summary item group incase if space is not available. */
     .summary-item-group {
       flex-wrap: wrap;
     }
   }
 
 /* Transaction Result styles ends */
-
-
-/* On Medium large devices increasing 
-  the transaction reciept width */
-@media (min-width: 768px) {
-  #PdfDownload .col-md-6 {
-    -webkit-box-flex: 0;
-    max-width: 70%;
-  }
-}
