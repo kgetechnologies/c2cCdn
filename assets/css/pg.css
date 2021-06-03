@@ -91,11 +91,13 @@ table tr {
   }
 
   .font-bold {
-    font-weight: bolder;
+    font-weight: bold;
   }
 
   .transaction-outline {
+    font-size: 18px;
     color: #6e6c6c;
+    margin-bottom: 20px;
   }
 
   .transaction-outline .text-success {
@@ -103,44 +105,51 @@ table tr {
   }
 
   .transaction-outline .transaction-id {
-    font-weight: bolder;
-    color: #1f1e1e;
+    font-weight: bold;
+    color: #202020;
   }
 
   .transaction-info-container {
     display: flex;
     justify-content: space-between;
-    margin-top: 30px;
+    margin: 22px 0;
   }
 
   .transaction-info-container .transaction-info-group {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .transaction-info-group {
+    align-items: center;
     color: #5e5b5b;
   }
 
   .transaction-info-group .info-title {
     color: #39393b;
-    font-weight: 500;
+    font-weight: bold;
     margin-bottom: 10px;
   }
 
+  .transaction-info-group, .summary-text {
+    font-size: 17px;
+  }
+
   .summary-text {
+    font-weight: bold;
     color: #202020;
-    margin-top: 22px;
+    margin: 22px 0;
   }
 
   .summary-card .summary-item-group {
     display: flex;
     justify-content: space-between;
+    font-size: 16px;
     padding: 1.5rem;
     background-color: #e6e6e6;
     border-radius: 4px;
     border-bottom: 1.5px solid #868686;
+  }
+
+  .summary-item-group > :first-child {
+    font-weight: 600;
   }
 
   .bg-success {
@@ -166,18 +175,19 @@ table tr {
 
     .transaction-info-container {
       flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .transaction-info-container > :not(:last-child) {
+      margin-bottom: 18px;
     }
 
     .transaction-info-group {
-      margin-bottom: 20px;
+      align-items: flex-start !important;
     }
 
     .company-text {
       margin-bottom: 15px;
-    }
-
-    .summary-text {
-      margin-top: -2px;
     }
 
     .summary-item-group {
