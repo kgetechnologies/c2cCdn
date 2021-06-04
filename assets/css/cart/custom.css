@@ -4023,7 +4023,7 @@ outline: 1px solid slategrey;
 .header_call-support p::before {
   content: '';
   position: absolute;
-  background: url("../images/phone.png") no-repeat 0 0;
+  background: url("https://cdn.paysecurely.online/assets/media/images/phone.png") no-repeat 0 0;
   width: 32px;
   height: 32px;
   display: inline-block;
