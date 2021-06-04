@@ -4360,6 +4360,11 @@ outline: 1px solid slategrey;
   border-bottom-left-radius: 5px;
 }
 
+.custom-font {
+  font-family: 'Helvetica', 'Arial', 'sans-serif' !important;
+  font-size: 18px;
+}
+
 .header_account_list.register ul li:first-child{
   border-top: none;
 }
