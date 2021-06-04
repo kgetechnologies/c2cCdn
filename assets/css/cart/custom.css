@@ -2592,6 +2592,12 @@ p:last-child {
 
 .secondheader {
   padding: 30px 0 24px;
+  font-size: 18px;
+}
+
+.logo {
+  width: 120px;
+  height: 120px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -4028,6 +4034,11 @@ outline: 1px solid slategrey;
   height: 32px;
   display: inline-block;
   left: -41px;
+}
+
+.header_bottom.sticky-header {
+  margin-bottom: 2rem;
+  padding-bottom: 3rem;
 }
 
 .header_call-support p a {
