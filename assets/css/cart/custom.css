@@ -2595,6 +2595,10 @@ p:last-child {
   font-size: 18px;
 }
 
+.secondheader .row {
+  justify-content: space-around;
+}
+
 .logo {
   width: 120px;
   height: 120px;
