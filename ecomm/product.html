@@ -1276,5 +1276,16 @@ for (var attr in meta) {
   </ul>
 
   <script src="https://cdn.paysecurely.online/assets/js/theme.js" type="text/javascript"></script>
+
+  <script>
+    const add_to_cart = document.getElementById('AddToCart');
+    const cart_count = document.getElementById('CartCount');
+    let counter = 0;
+
+    add_to_cart.onclick = function() {
+      counter++;
+      cart_count.innerHTML = counter;
+    }
+  </script>
 </body>
 </html>
