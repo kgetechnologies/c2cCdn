@@ -47,8 +47,8 @@
         // if (window.File && window.FileReader && window.FileList && window.Blob) {
         if (document.getElementById('filePicker')!=null)
         document.getElementById('filePicker').addEventListener('change', handleFileSelect, false);
-	 if (document.getElementsByClassName('close')!=null)
-        document.getElementsByClassName('close').addEventListener('click', ()=>{
+	 if (document.getElementsByClassName('close')!=null && document.getElementsByClassName('close')[0]!=null)
+        document.getElementsByClassName('close')[0].addEventListener('click', ()=>{
 			$('.filealert').empty();
 			
 		}, false);
