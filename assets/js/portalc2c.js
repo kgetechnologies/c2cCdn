@@ -20,19 +20,20 @@
                             Extn: fileExtn
                         },
                         success: function (data) {
-                            alert(data.FileId);
+                            //alert(data.FileId);
                             if (data != null && data.FileId != null) {
-                                $('#preview').after('<p>File Created Successfully</p>');
+                                //$('#preview').after('<p class="filealert">File Created Successfully</p>');
                                 var textBoxToUpdate = document.getElementById('fieldtoUpdate').value;
                                 $("." + textBoxToUpdate).val(data.FileId);
+								 $('.close').click();
                             }
                             else {
-                                $('#preview').after('<p>Error Occured: ' + data.ErrorMessage + ' </p>');
+                                $('#preview').after('<p class="filealert">Error Occured: ' + data.ErrorMessage + ' </p>');
                             }
                         },
                         error: function (data) {
-                            alert(data);
-                            $('#preview').after('<p>Error Occured</p>' + data);
+                            //alert(data);
+                            $('#preview').after('<p class="filealert">Error Occured</p>' + data);
                         }
                     });
 
@@ -45,6 +46,11 @@
         // if (window.File && window.FileReader && window.FileList && window.Blob) {
         if (document.getElementById('filePicker')!=null)
         document.getElementById('filePicker').addEventListener('change', handleFileSelect, false);
+	 if (document.getElementsByClassName('close')!=null)
+        document.getElementsByClassName('close').addEventListener('click', ()=>{
+			$('.filealert').empty();
+			
+		}, false);
         //} else {
         //    alert('The File APIs are not fully supported in this browser.');
         //}
