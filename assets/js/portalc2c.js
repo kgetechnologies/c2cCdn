@@ -1,4 +1,61 @@
-    $(document).ready(function () {
+     $(document).ready(function () {
+        var handleFileSelect = function (evt) {
+            var files = evt.target.files;
+            var file = files[0];
+
+            if (files && file) {
+                var reader = new FileReader();
+
+                reader.onload = function (readerEvt) {
+                    var binaryString = readerEvt.target.result;
+                    var data = btoa(binaryString);
+                    var profileId = document.getElementById('_ProfileId').value;
+                    var fileExtn = file.name.split('.').pop().toLowerCase();
+                    $.ajax({
+                        url: "/File/UploadFile",
+                        method: "POST",
+                        data: {
+                            Base64String: data,
+                            ProfileId: profileId,
+                            Extn: fileExtn
+                        },
+                        success: function (data) {
+                            alert(data.FileId);
+                            if (data != null && data.FileId != null) {
+                                $('#preview').after('<p>File Created Successfully</p>');
+                                var textBoxToUpdate = document.getElementById('fieldtoUpdate').value;
+                                $("." + textBoxToUpdate).val(data.FileId);
+                            }
+                            else {
+                                $('#preview').after('<p>Error Occured: ' + data.ErrorMessage + ' </p>');
+                            }
+                        },
+                        error: function (data) {
+                            alert(data);
+                            $('#preview').after('<p>Error Occured</p>' + data);
+                        }
+                    });
+
+                };
+
+                reader.readAsBinaryString(file);
+            }
+        };
+
+        // if (window.File && window.FileReader && window.FileList && window.Blob) {
+        if (document.getElementById('filePicker')!=null)
+        document.getElementById('filePicker').addEventListener('change', handleFileSelect, false);
+        //} else {
+        //    alert('The File APIs are not fully supported in this browser.');
+        //}
+
+        $(".btnModalPopup").click(function () {
+            var forField = this.getAttribute("upload-field");
+            document.getElementById('fieldtoUpdate').value = forField;
+        });
+    });
+
+   $(document).ready(function () {
         $('#kt_datatable_2').DataTable(
             {
                 "aLengthMenu": [[5, 10], [5, 10]],
