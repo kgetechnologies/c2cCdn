@@ -21,12 +21,9 @@
                         },
                         success: function (data) {
                             //alert(data.FileId);
-                            if (data != null && data.FileId != null) {
-                                //$('#preview').after('<p class="filealert">File Created Successfully</p>');
-                                var textBoxToUpdate = document.getElementById('fieldtoUpdate').value;
-								if(fieldtoUpdate!="" && fieldtoUpdate!=null)
+                            if (data != null && data.FileId != null) {                                
+                                var textBoxToUpdate = document.getElementById('fieldtoUpdate').value;								
                                 $("." + textBoxToUpdate).val(data.FileId);
-								 $('.close').click();
                             }
                             else {
                                 $('#preview').after('<p class="filealert">Error Occured: ' + data.ErrorMessage + ' </p>');
@@ -59,6 +56,7 @@
         $(".btnModalPopup").click(function () {
             var forField = this.getAttribute("upload-field");
             document.getElementById('fieldtoUpdate').value = forField;
+			$('.filealert').empty();
         });
     });
 
