@@ -24,6 +24,7 @@
                             if (data != null && data.FileId != null) {                                
                                 var textBoxToUpdate = document.getElementById('fieldtoUpdate').value;								
                                 $("." + textBoxToUpdate).val(data.FileId);
+								$("#fileClose").click();
                             }
                             else {
                                 $('#preview').after('<p class="filealert">Error Occured: ' + data.ErrorMessage + ' </p>');
@@ -43,12 +44,7 @@
 
         // if (window.File && window.FileReader && window.FileList && window.Blob) {
         if (document.getElementById('filePicker')!=null)
-        document.getElementById('filePicker').addEventListener('change', handleFileSelect, false);
-	 if (document.getElementsByClassName('close')!=null && document.getElementsByClassName('close')[0]!=null)
-        document.getElementsByClassName('close')[0].addEventListener('click', ()=>{
-			$('.filealert').empty();
-			
-		}, false);
+        document.getElementById('filePicker').addEventListener('change', handleFileSelect, false);	
         //} else {
         //    alert('The File APIs are not fully supported in this browser.');
         //}
