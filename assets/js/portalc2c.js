@@ -24,6 +24,7 @@
                             if (data != null && data.FileId != null) {
                                 //$('#preview').after('<p class="filealert">File Created Successfully</p>');
                                 var textBoxToUpdate = document.getElementById('fieldtoUpdate').value;
+								if(fieldtoUpdate!="" && fieldtoUpdate!=null)
                                 $("." + textBoxToUpdate).val(data.FileId);
 								 $('.close').click();
                             }
