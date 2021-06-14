@@ -76441,7 +76441,7 @@ code {
 }
 
 .navi {
-  padding: 0;
+  padding: 0 10px;
   margin: 0;
   display: block;
   list-style: none;
