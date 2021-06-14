@@ -1,3 +1,45 @@
   .modal.fade.show {
         opacity:1 !important;
     }
+
+
+.dropdown-menu {
+  width: 320px !important;
+  padding: 1rem 1.8rem 1.2rem 1.8rem;
+}
+
+.dropdown-menu .navi {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.dropdown-menu li {
+  margin: 8px 0;
+}
+
+.dropdown-menu a {
+  font-size: 17px;
+  color: #05030f;
+  letter-spacing: 1px;
+}
+
+.dropdown-menu a:hover {
+  color: #12c8ff;
+  cursor: pointer;
+}
+
+.dropdown-menu a:hover:before {
+  content: "•";
+  font-size: 17px;
+  padding-right: 5px;
+}
+
+.navi-header {
+  align-self: center;
+  font-weight: bold;
+  font-size: 19px;
+  color: #160479;
+}
+
