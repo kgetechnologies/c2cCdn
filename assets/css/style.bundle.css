@@ -65337,7 +65337,6 @@ code {
 .datatable.datatable-default > .datatable-table {
   background-color: #ffffff;
   border-collapse: collapse;
-  overflow: hidden;
   display: none;
   width: 100%;
 }
