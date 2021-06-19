@@ -80,6 +80,12 @@
                 "iDisplayLength": 10
             }
         );
+		$('#kt_datatable_88').DataTable(
+            {
+                "aLengthMenu": [[5, 10,15], [5, 10,15]],
+                "iDisplayLength": 10
+            }
+        );
     });
     $(document).ready(function () {
         $('#kt_datatable_4').DataTable(
