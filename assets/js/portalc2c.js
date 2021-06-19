@@ -73,6 +73,14 @@
             }
         );
     });
+	 $(document).ready(function () {
+        $('#kt_datatable_vendor').DataTable(
+            {
+                "aLengthMenu": [[5, 10], [5, 10]],
+                "iDisplayLength": 10
+            }
+        );
+    });
     $(document).ready(function () {
         $('#kt_datatable_4').DataTable(
             {
