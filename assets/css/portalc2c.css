@@ -6,6 +6,15 @@
 		display:none !important;
         opacity:0 !important;
     }
+	  .modal-backdrop.fade.show {
+		display:block !important;
+        opacity:1 !important;
+    }
+ .modal-backdrop.fade {
+		display:none !important;
+        opacity:0 !important;
+    }
+	
 
 .dropdown-menu {
   width: 320px !important;
