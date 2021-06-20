@@ -7,12 +7,10 @@
         opacity:0 !important;
     }
 	  .modal-backdrop.fade.show {
-		display:block !important;
-        opacity:1 !important;
+		display:block !important;        
     }
  .modal-backdrop.fade {
-		display:none !important;
-        opacity:0 !important;
+		display:none !important;        
     }
 	
 
