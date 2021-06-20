@@ -1,7 +1,11 @@
   .modal.fade.show {
+		display:block !important;
         opacity:1 !important;
     }
-
+ .modal.fade {
+		display:none !important;
+        opacity:0 !important;
+    }
 
 .dropdown-menu {
   width: 320px !important;
