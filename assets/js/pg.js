@@ -1,3 +1,4 @@
+$(document).ready(function () {
 var transaction_reciept = document.getElementById('PdfDownload');
 var btn = document.getElementById('print-btn');
 
@@ -72,3 +73,4 @@ function save_div() {
 }
 
 btn.addEventListener('click', save_div);
+});
