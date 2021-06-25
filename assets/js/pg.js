@@ -71,7 +71,7 @@ function save_div() {
     y: 50
   });
 }
-if(btn!=null){
-btn.addEventListener('click', save_div);
+if(btn!=null && btn[0]!=null){
+btn[0].addEventListener('click', save_div);
 }
 });
