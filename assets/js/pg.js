@@ -1,6 +1,6 @@
 $(document).ready(function () {
 var transaction_reciept = document.getElementById('PdfDownload');
-var btn = document.getElementById('print-btn');
+var btn = document.getElementsByClassName('print-reciept');
 
 // Sets a style property for a given element with the given value.
 function set_style_property(element, property, value) {
@@ -71,6 +71,7 @@ function save_div() {
     y: 50
   });
 }
-
+if(btn!=null){
 btn.addEventListener('click', save_div);
+}
 });
