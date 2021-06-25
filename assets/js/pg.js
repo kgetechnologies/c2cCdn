@@ -1,6 +1,6 @@
 $(document).ready(function () {
 var transaction_reciept = document.getElementById('PdfDownload');
-var btn = document.getElementsByClassName('print-reciept');
+var btn = document.getElementById('print-btn');
 
 // Sets a style property for a given element with the given value.
 function set_style_property(element, property, value) {
@@ -59,8 +59,9 @@ function save_div() {
     change the styles when downloaded as pdf. */
   const trans_copy = transaction_reciept.cloneNode(true);
   set_custom_styles_for_download(trans_copy);
+  if(html2canvas!=null){
   window.html2canvas = html2canvas;
-  
+  }
   var doc = new jspdf.jsPDF('p', 'pt','a4');
 
   doc.html(trans_copy, {
@@ -71,7 +72,7 @@ function save_div() {
     y: 50
   });
 }
-if(btn!=null && btn[0]!=null){
-btn[0].addEventListener('click', save_div);
+if(btn!=null){
+btn.addEventListener('click', save_div);
 }
 });
