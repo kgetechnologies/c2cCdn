@@ -1,6 +1,6 @@
 $(document).ready(function () {
 var transaction_reciept = document.getElementById('PdfDownload');
-var btn = document.getElementById('print-btn');
+var btn = document.querySelector('.print-reciept');
 
 // Sets a style property for a given element with the given value.
 function set_style_property(element, property, value) {
@@ -59,20 +59,20 @@ function save_div() {
     change the styles when downloaded as pdf. */
   const trans_copy = transaction_reciept.cloneNode(true);
   set_custom_styles_for_download(trans_copy);
-  if(html2canvas!=null){
+
   window.html2canvas = html2canvas;
-  }
+
   var doc = new jspdf.jsPDF('p', 'pt','a4');
 
   doc.html(trans_copy, {
-    callback: function (doc)  {
+    callback: function ()  {
       doc.save('reciept.pdf');
     },
     x: 50,
     y: 50
   });
 }
-if(btn!=null){
-btn.addEventListener('click', save_div);
-}
+
+  btn.addEventListener('click', save_div);
+
 });
