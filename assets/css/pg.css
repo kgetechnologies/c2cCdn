@@ -105,6 +105,10 @@ table tr {
     color: #4edf10 !important;
   }
 
+  .transaction-outline .text-danger {
+    color: #e3441c !important;
+  }
+
   /* Making transaction id look a little bolder */
   .transaction-outline .transaction-id {
     font-weight: bold;
@@ -167,6 +171,10 @@ table tr {
 
   .bg-success {
     background-color: #4ce93d !important;
+  }
+
+  .bg-danger {
+    background-color: #e3441c !important;
   }
 
   /* Styling the print reciept button */
