@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <base href="">
+        <meta charset="utf-8">
+        <title>Transaction Done Already</title>
+        <meta name="description" content="Updates and statistics">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700">
+        <script src="https://cdn.paysecurely.online/assets/js/jquery-3.6.0.slim.min.js"></script>
+        <link href="https://cdn.paysecurely.online/assets/plugins/custom/fullcalendar/fullcalendar.bundle.css" rel="stylesheet" type="text/css">
+        <link href="https://cdn.paysecurely.online/assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css">
+        <link href="https://cdn.paysecurely.online/assets/plugins/custom/prismjs/prismjs.bundle.css" rel="stylesheet" type="text/css">
+        <link href="https://cdn.paysecurely.online/assets/css/style.bundle.css" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="https://cdn.paysecurely.online/assets/media/logos/c2c/favicon.ico">
+        <link rel="stylesheet" href="https://cdn.paysecurely.online/assets/css/pg.css" type="text/css">
+
+    </head>
+    <body id="kt_body" class="header-fixed header-mobile-fixed header-bottom-enabled">
+        <div id="cookie-consent" class="pt-25">
+            <div class="container">
+                <span>My site uses cookies to personalise content and adverts, to provide social media features and to analyse traffic.</span>
+                <button class="btn btn-xs btn-green" id="consent">I'm happy with this</button> <button class="btn btn-xs btn-green" id="learn-more">Learn more</button>
+            </div>
+        </div>
+        <div id="kt_header_mobile" class="header-mobile bg-primary header-mobile-fixed">
+            <!--begin::Logo-->
+            <a href="index.html">
+                <img alt="Logo" src="https://cdn.paysecurely.online/assets/media/logos/c2c/logo.png" class="max-h-30px">
+            </a>
+        </div>
+        <!--end::Header Mobile-->
+        <div class="d-flex flex-column flex-root">
+            <!--begin::Page-->
+            <div class="d-flex flex-row flex-column-fluid page">
+                <!--begin::Wrapper-->
+                <div class="d-flex flex-column flex-row-fluid wrapper pt-15" id="kt_wrapper">
+                    <!--begin::Header-->
+                    <div id="kt_header" class="header flex-column header-fixed">
+                        <div class="header-top">
+                            <!--begin::Container-->
+                            <div class="container">
+                                <!--begin::Left-->
+                                <div class="d-none d-lg-flex align-items-center mr-3">
+                                    <!--begin::Logo-->
+                                    <a href="index.html" class="mr-20">
+                                        <img alt="Logo" src="https://cdn.paysecurely.online/assets/media/logos/c2c/logo.png" class="max-h-35px">
+                                    </a>
+                                    <!--end::Logo-->
+                                </div>
+                                <!--end::Left-->
+                            </div>
+                            <!--end::Container-->
+                        </div>
+    
+                    </div>
+                    <!--end::Header-->
+                    <!--begin::Content-->
+                    
+        <div class="container-fluid">
+            <div id="PdfDownload" class="transaction-card">
+                <p class="company-text">PaySecurely.Online</p>
+                <h3 class="font-bold">Dear Test</h3>
+                <p class="transaction-outline">
+                    Thank you for your payment. We have recieved your payment of 
+                    ₹ 12000.00 <span class="text-danger">failed</span>. Your payment 
+                    transaction ID is <span class="transaction-id">310007217433</span>
+                </p><hr>
+                <div class="transaction-info-container">
+                    <div class="transaction-info-group">
+                        <span class="info-title">Bank Ref No</span>
+                        <span>1622522095471</span>
+                    </div>
+                    <div class="transaction-info-group">
+                        <span class="info-title">Payment Request Date</span>
+                        <span>06-01-2021</span>
+                        <span>00:05:45</span>
+                    </div>
+                    <div class="transaction-info-group">
+                        <span class="info-title">Payment Request Date</span>
+                        <span>01-06-2021</span>
+                        <span>10:05:30</span>
+                    </div>
+                </div><hr>
+                <!-- End of transaction info container -->
+                <p class="summary-text">Summary</p>
+                <div class="summary-card">
+                    <div class="summary-item-group">
+                        <span>Order Id</span>
+                        <span class="order-id">ae34c4c7-afa8-4a1d-8e45-b52f834d1ee7</span>
+                    </div>
+                    <div class="summary-item-group">
+                        <span>Payment Mode</span>
+                        <span>Credit Card</span>
+                    </div>
+                    <div class="summary-item-group">
+                        <span>Card Type</span>
+                        <span>MasterCard</span>
+                    </div>
+                    <div class="summary-item-group">
+                        <span>Request Amount</span>
+                        <span>12000.00</span>
+                    </div>
+                    <div class="summary-item-group">
+                        <span>Amount Paid</span>
+                        <span>12000.00</span>
+                    </div>
+                    <div class="summary-item-group bg-danger">
+                        <span class="font-bold">Payment Status</span>
+                        <span class="font-bold">Failed</span>
+                    </div>
+                </div>
+                <!-- End of summary card -->
+            </div>
+            <!-- End of transaction card -->
+            <button class="print-reciept" id="print-btn">
+                Print reciept
+            </button>
+        </div>
+    
+        <div class="footer bg-white py-4 d-flex flex-lg-column" id="kt_footer">
+            <!--begin::Container-->
+            <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between">
+                <!--begin::Copyright-->
+                <div class="text-dark order-2 order-md-1">
+                    <span class="text-muted font-weight-bold mr-2">2021©</span>
+                    <a href="https://paysecurely.online" target="_blank" class="text-dark-75 text-hover-primary">C2C Venture Private Limited</a>
+                </div>
+                <!--end::Copyright-->
+                <!--begin::Nav-->
+                <div class="nav nav-dark order-1 order-md-2">
+                    <a href="https://paysecurely.online/privacy" target="_blank" class="nav-link pr-3 pl-0">Privacy</a>
+                    <a href="https://paysecurely.online/About-Us" target="_blank" class="nav-link pr-3 pl-0">About</a>
+                    <a href="https://paysecurely.online/TermsAndCondition" target="_blank" class="nav-link px-3">Terms &amp; Condition</a>
+                    <a href="https://paysecurely.online/ContactUs" target="_blank" class="nav-link pl-3 pr-0">Contact</a>
+                </div>
+                <!--end::Nav-->
+            </div>
+            <!--end::Container-->
+        </div>
+    
+    
+                </div>
+                <!--end::Wrapper-->
+            </div>
+            <!--end::Page-->
+        </div>
+        <!--end::Main-->
+    
+        <script src="https://cdn.paysecurely.online/assets/js/jquery.validate.min.js" ></script>
+        <script src="https://cdn.paysecurely.online/assets/js/bootstrap.min.js" ></script>
+        <script src="https://cdn.paysecurely.online/assets/js/jspdf.umd.min.js" ></script>
+    
+        <script src="https://cdn.paysecurely.online/assets/js/bootstrap.bundle.min.js" ></script>
+        
+        <!-- Pg.js -->
+        <script src="https://cdn.paysecurely.online/assets/js/pg.js"></script>
+        <!-- Added html2canvas cdn -->
+        <script src="https://cdn.paysecurely.online/assets/js/html2canvas.min.js"></script>
+
+        <!--<script>var HOST_URL = "https://preview.keenthemes.com/metronic/theme/html/tools/preview";</script>-->
+        <!--begin::Global Config(global config for global JS scripts)-->
+        <script>var KTAppSettings = { "breakpoints": { "sm": 576, "md": 768, "lg": 992, "xl": 1200, "xxl": 1200 }, "colors": { "theme": { "base": { "white": "#ffffff", "primary": "#6993FF", "secondary": "#E5EAEE", "success": "#1BC5BD", "info": "#8950FC", "warning": "#FFA800", "danger": "#F64E60", "light": "#F3F6F9", "dark": "#212121" }, "light": { "white": "#ffffff", "primary": "#E1E9FF", "secondary": "#ECF0F3", "success": "#C9F7F5", "info": "#EEE5FF", "warning": "#FFF4DE", "danger": "#FFE2E5", "light": "#F3F6F9", "dark": "#D6D6E0" }, "inverse": { "white": "#ffffff", "primary": "#ffffff", "secondary": "#212121", "success": "#ffffff", "info": "#ffffff", "warning": "#ffffff", "danger": "#ffffff", "light": "#464E5F", "dark": "#ffffff" } }, "gray": { "gray-100": "#F3F6F9", "gray-200": "#ECF0F3", "gray-300": "#E5EAEE", "gray-400": "#D6D6E0", "gray-500": "#B5B5C3", "gray-600": "#80808F", "gray-700": "#464E5F", "gray-800": "#1B283F", "gray-900": "#212121" } }, "font-family": "Poppins" };</script>
+        <!--end::Global Config-->
+        <!--begin::Global Theme Bundle(used by all pages)-->
+        <script src="https://cdn.paysecurely.online/assets/plugins/global/plugins.bundle.js" ></script>
+        <script src="https://cdn.paysecurely.online/assets/plugins/custom/prismjs/prismjs.bundle.js" ></script>
+        <script src="https://cdn.paysecurely.online/assets/js/scripts.bundle.js" ></script>
+        <!--end::Global Theme Bundle-->
+        <!--begin::Page Vendors(used by this page)-->
+        <script src="https://cdn.paysecurely.online/assets/plugins/custom/fullcalendar/fullcalendar.bundle.js" ></script>
+        <!--end::Page Vendors-->
+        <!--begin::Page Scripts(used by this page)-->
+        <script src="https://cdn.paysecurely.online/assets/js/pages/widgets.js" ></script>
+        <!--end::Page Scripts-->
+        <!--end::Body-->
+        <svg id="SvgjsSvg1001" width="2" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" style="overflow: hidden; top: -100%; left: -100%; position: absolute; opacity: 0;"><defs id="SvgjsDefs1002"></defs><polyline id="SvgjsPolyline1003" points="0,0"></polyline><path id="SvgjsPath1004" d="M-1 200L-1 200C-1 200 68.83333333333333 200 68.83333333333333 200C68.83333333333333 200 137.66666666666666 200 137.66666666666666 200C137.66666666666666 200 206.5 200 206.5 200C206.5 200 275.3333333333333 200 275.3333333333333 200C275.3333333333333 200 344.16666666666663 200 344.16666666666663 200C344.16666666666663 200 413 200 413 200C413 200 413 200 413 200 "></path></svg>
+
+        
+        <script type="text/javascript">
+            $(function () {
+                if (document.cookie.indexOf("cookies") < 0) {
+                    $('#cookie-consent').slideDown('slow');
+                }
+                $('#consent').on('click', function () {
+                    document.cookie = "cookies=yes; max-age=" + (5 * 365 * 24 * 60 * 60);
+                    $('#cookie-consent').slideUp('slow');
+                });
+                $('#learn-more').on('click', function () {
+                    location.href = '/privacy';
+                })
+            });
+        </script>
+    
+        <script type="text/javascript">
+            maxmind_user_id = "537345";/* "6QY43Gawh0BNhO1j";*/
+            (function () {
+                var loadDeviceJs = function () {
+                    var element = document.createElement('script');
+                    element.src = 'https://device.maxmind.com/js/device.js';
+                    document.body.appendChild(element);
+                };
+                if (window.addEventListener) {
+                    window.addEventListener('load', loadDeviceJs, false);
+                } else if (window.attachEvent) {
+                    window.attachEvent('onload', loadDeviceJs);
+                }
+            })();
+        </script>
+    
+    
+    </body>
+</html>
