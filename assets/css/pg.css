@@ -18,16 +18,16 @@
 }
 
 /* Styles for main container card body */
-#kt-pricing-2_content2 .card-body .row {
+.pricing-container .card-body .row {
   justify-content: space-evenly !important;
   align-items: flex-end !important;
 }
 
-#kt-pricing-2_content2 .card-body .row > div{
+.pricing-container .card-body .row > div{
   border-top: 2px solid #3699FF;
 }
 
-#kt_footer .nav {
+.primary-footer .nav {
   justify-content: center;
 }
 
