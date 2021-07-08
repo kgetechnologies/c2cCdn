@@ -17,6 +17,29 @@
   font-size: 15px;
 }
 
+/* Styles for main container card body */
+#kt-pricing-2_content2 .card-body .row {
+  justify-content: space-evenly !important;
+  align-items: flex-end !important;
+}
+
+#kt-pricing-2_content2 .card-body .row > div{
+  border-top: 2px solid #3699FF;
+}
+
+#kt_footer .nav {
+  justify-content: center;
+}
+
+#kt_footer a {
+  font-size: 22px;
+}
+
+#kt_footer .copyright {
+  text-align: center;
+}
+/* End of styles for main container card body */
+
 /* Giving margin bottom for container inorder
   to separate it from footer */
 .container-fluid {
