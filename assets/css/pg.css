@@ -256,3 +256,125 @@ table tr {
   }
 
 /* Transaction Result styles ends */
+
+/* Custom styles for our services */
+.our-services {
+  width: 70%;
+  margin: 3rem auto;
+  padding: 10px;
+}
+
+.our-services h6, h3 {
+  font-family: 'poppins';
+  text-align: center;
+}
+
+.our-services h6 {
+  font-size: 18px;
+  color: #104CBA;
+  font-weight: 600;
+  padding-bottom: 1rem;
+}
+
+.our-services h3 {
+  font-size: 36px;
+  color: #000;
+  font-weight: 600;
+  padding-bottom: 1.5rem;
+}
+
+.services-container {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  grid-gap: 1.5rem;
+  justify-items: center;
+}
+
+.service-card {
+  position: relative;
+  width: 100%;
+  height: 360px;
+  margin: 20px 20px 50px 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 30px 0px rgb(42 22 139 / 12%);
+  transition: background .3s, border .3s, border-radius .3s, box-shadow .3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-card .service-img-container {
+  text-align: center;
+}
+
+.service-img-container img {
+  width: 250px;
+  height: 200px;
+  box-sizing: border-box;
+}
+
+.service-img-container img:hover {
+  transition: all .35s cubic-bezier(.38, 3, .57, 1.6);
+  transform: scale(1.05);
+}
+
+.service-card h6 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #010101;
+  line-height: 32px;
+  letter-spacing:  0px;
+}
+
+.service-card .description {
+  font-size: 16px;
+  line-height: 25px;
+  color: #696969;
+  font-weight: 400;
+  text-align: center;
+}
+
+.service-card .card-no {
+  position: absolute;
+  background: linear-gradient(to right, #ff3834 0%, #ff7133 100%);
+  color: #fff;
+  width: 61px;
+  height: 61px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 61px;
+  padding: 0 15px;
+  border-radius: 50%;
+  text-align: center;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+  box-shadow: 0 0 20px rgb(216 181 183 / 30%);
+  transform: translate3d(0px, 0px, 0px);
+  bottom: -75px;
+}
+
+.service-card .card-no:hover {
+  background: #2f0b81;
+  background: -moz-linear-gradient(left, #2f0b81 0%, #0c56c4 100%);
+  background: -webkit-linear-gradient(left, #2f0b81 0%, #0c56c4 100%);
+  background: linear-gradient(to right, #2f0b81 0%, #0c56c4 100%);
+  /* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2f0b81', endColorstr='#0c56c4', GradientType=1); */
+  color: #fff;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+  box-shadow: 0px 0px 15px rgb(127 25 33 / 30%);
+  transform: translate3d(0px, 0px, 0px);
+}
+
+@media (max-width: 600px) {
+  .our-services {
+    width: 100%;
+  }
+}
+
+/* End of c2c services styles */
