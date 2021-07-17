@@ -22,6 +22,7 @@
   display: grid;
   grid-row-gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  justify-content: center;
 }
 
 .pricing-container .card-body .row > div{
