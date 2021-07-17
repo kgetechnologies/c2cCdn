@@ -19,12 +19,14 @@
 
 /* Styles for main container card body */
 .pricing-container .card-body .row {
-  justify-content: space-evenly !important;
-  align-items: flex-end !important;
+  display: grid;
+  grid-row-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
 }
 
 .pricing-container .card-body .row > div{
   border-top: 2px solid #3699FF;
+  margin: 0 20px;
 }
 
 .primary-footer .nav {
