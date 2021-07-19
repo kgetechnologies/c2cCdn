@@ -64,8 +64,6 @@ function save_div() {
 
   var doc = new jspdf.jsPDF('p', 'pt','a4');
 
-  doc.setFont("Rupee_Foradian", "normal");
-
   doc.html(trans_copy, {
     callback: function ()  {
       doc.save('reciept.pdf');
