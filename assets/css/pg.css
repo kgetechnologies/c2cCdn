@@ -193,6 +193,12 @@ table tr {
   /* All first child in summary item group is bolded. */
   .summary-item-group > :first-child {
     font-weight: bold;
+    padding-right: 10px;
+  }
+
+  /* All last child in summary item group is aligned to right. */
+  .summary-item-group > :last-child {
+    text-align: right;
   }
 
   .bg-success {
@@ -220,7 +226,8 @@ table tr {
     /* On devices with maximum width of 750px setting the width of 
       transaction card to 90% for good UI. */
     .transaction-card {
-      width: 90%;
+      width: 100%;
+      padding: 2rem 1rem;
     }
 
     /* Group in transaction info container are displayed in column format
@@ -251,10 +258,12 @@ table tr {
     .company-text {
       margin-bottom: 15px;
     }
+  }
 
-    /* Wrapping text in summary item group incase if space is not available. */
-    .summary-item-group {
-      flex-wrap: wrap;
+  @media (max-width: 500px) {
+    /* Adding ':' to all first child of summary item group */
+    .summary-item-group >:first-child:after {
+      content: ': ';
     }
   }
 
