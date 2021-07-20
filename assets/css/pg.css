@@ -87,15 +87,6 @@ table tr {
   font-weight: 800 !important;
 }
 
-
-/* Aligning the button to center */
-.container-fluid button {
-  margin-left: 50%;
-  transform: translateX(-50%);
-  font-size: 17px;
-  color: #fff;
-}
-
 /* Start of Transaction Result styles */
 
   /* Outer card which contains the all the information */
@@ -209,16 +200,39 @@ table tr {
     background-color: #ff5d35 !important;
   }
 
+  .button-group {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    width: 700px;
+    padding: 5px 1rem 1rem 1rem;
+    margin: 0 auto;
+  }
+
   /* Styling the print reciept button */
-  .print-reciept {
-    margin-top: 12px;
+  .button-group button {
     background-color: dodgerblue;
     color: #fff;
-    border: 0;
+    border: 2px solid dodgerblue;
     border-radius: 8px;
-    padding: 1rem;
+    padding: 10px;
     font-size: 16px;
     cursor: pointer;
+    width: 200px;
+    margin: 8px;
+  }
+
+  #copy-tranx {
+    color: dodgerblue;
+    background-color: #fff;
+  }
+
+  #copy-tranx:hover {
+    background-color: dodgerblue;
+    color: #fff;
+    transition: background-color .5s;
   }
 
 
@@ -257,6 +271,10 @@ table tr {
 
     .company-text {
       margin-bottom: 15px;
+    }
+
+    .button-group {
+      width: 100%;
     }
   }
 
