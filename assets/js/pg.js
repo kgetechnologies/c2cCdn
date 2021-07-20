@@ -15,7 +15,7 @@ function set_custom_styles_for_download(trans_copy) {
     modify the styles directly using `jsPDF` */
   trans_copy.style.width = '500px';
   trans_copy.style.margin = 'auto';
-  trans_copy.style.padding = '.8rem';
+  trans_copy.style.padding = '1.3rem';
 
   // Reducing font sizes.
   for(const element of trans_copy.children)
@@ -50,6 +50,8 @@ function set_custom_styles_for_download(trans_copy) {
   for(const summary_item_group of summary_item_groups) {
     set_style_property(summary_item_group, 'font-size', '13.5px');
     set_style_property(summary_item_group, 'padding', '.8rem');
+    set_style_property(summary_item_group, 'background-color', '#eeeeee');
+    set_style_property(summary_item_group, 'border-bottom', 'none');
   }
 }
 
