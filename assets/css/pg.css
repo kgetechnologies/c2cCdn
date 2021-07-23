@@ -138,6 +138,9 @@ table tr {
     display: flex;
     justify-content: space-between;
     margin: 22px 0;
+    border-top: 3px solid #800080;
+    border-bottom: 3px solid #800080;
+    padding: 20px 0;
   }
 
   /* Each transaction info group is displayed in column format.
