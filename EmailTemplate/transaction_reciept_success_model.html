@@ -1,74 +1,93 @@
 <main style="
-    position: relative;
-    width: 100%;
-    padding: 0 1rem;
-    margin: 3rem auto;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    box-sizing: border-box;
+  position: relative;
+  width: 500px;
+  padding: 0 1rem;
+  margin: auto;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
   ">
-  <h2>Dear $Name$</h2>
-  <p style="font-size: 17px; margin-bottom: 1rem;">
+    <h2>Dear $Name$</h2>
+    <p style="font-size: 18px; margin-bottom: 1rem;">
     Thank you for your payment. We have recieved your payment of
     <span style="font-family:Aerial; white-space: nowrap;">₹ $Amount$</span>
-    <span style="color: #62ff54; font-weight: 600;">$statusMessage$</span>.
+    <span style="color: #62ff54; font-weight: 600;">$statusMessage$</span>. 
     Your payment transaction ID is <span style="font-weight: bold;">$TranxId$</span>
-  </p>
+    </p>
 
-  <div style="
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin: 1.8rem 0;
+    <div style="
+      position: relative;
+      margin: 1.8rem 0;
+      border-top: 3px solid #800080;
+      padding: 1rem 10px;
+      box-sizing: border-box;
+    ">
+      <div style="
+        position: absolute;
+        left: 0px;
+        width: 100px;
+        color: #5e5b5b;
+      ">
+          <span style="
+            text-align: center;
+            display: block;
+            color: #39393b;
+            font-weight: bold;
+            margin-bottom: 10px;">
+            Bank Ref No
+          </span>
+          <span style="
+            overflow-wrap: anywhere;
+            text-align: center;
+            display: block;">
+              $BankRefId$
+          </span>
+      </div>
+      <div style="
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        margin-left: -14px;
+        color: #5e5b5b;
+        padding: 0 15px;
+      ">
+          <span style="
+            display: block;
+            text-align: center;
+            color: #39393b;
+            font-weight: bold;
+            margin-bottom: 10px;">
+            Payment Request Date
+          </span>
+          <span style="text-align: center; display: block;">$ReqTranxDate$</span>                        
+      </div>
+      <div style="
+        position: absolute;
+        right: 0px;
+        color: #5e5b5b;
+      ">
+          <span style="
+            text-align: center;
+            display: block;
+            color: #39393b;
+            font-weight: bold;
+            margin-bottom: 10px;">
+            Transaction Date
+          </span>
+          <span style="text-align: center; display: block;">$TranxDate$</span>                        
+      </div>
+    </div>
+
+    <h3 style="
+    margin-top: 4rem;
     border-top: 3px solid #800080;
-    border-bottom: 3px solid #800080;
-    padding: 1rem;
-  ">
-    <div style="
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      color: #5e5b5b;
-      padding: 10px 0;
+    padding-top: 1.5rem;
+    font-size: 20px;
+    padding: 1.5rem 0 .6rem 0;
     ">
-        <span style="color: #39393b; font-weight: bold; margin-bottom: 10px;">
-          Bank Ref No
-        </span>
-        <span style="overflow-wrap: anywhere;">$BankRefId$</span>
-    </div>
-    <div style="
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      color: #5e5b5b;
-      padding: 10px 0;
-    ">
-        <span style="color: #39393b; font-weight: bold; margin-bottom: 10px;">
-          Payment Request Date
-        </span>
-        <span style="overflow-wrap: anywhere;">$ReqTranxDate$</span>                        
-    </div>
-    <div style="
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      color: #5e5b5b;
-      padding: 10px 0;
-    ">
-        <span style="color: #39393b; font-weight: bold; margin-bottom: 10px;">
-          Transaction Date
-        </span>
-        <span style="overflow-wrap: anywhere;">$TranxDate$</span>                        
-    </div>
-  </div>
-
-  <h3>
     Transaction Summary
-  </h3>
-  <div>
+    </h3>
+    <div>
     <div style="
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
       font-size: 17px;
       font-weight: 500;
       padding: 1.5rem;
@@ -80,12 +99,9 @@
           padding: 0 0 15px 0;
           font-weight: 700;
         ">Order Id:</span>
-        <span style="text-align: right;">$TrackingId$</span>
+        <span style="float: right;">$TrackingId$</span>
     </div>
     <div style="
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
       font-size: 17px;
       font-weight: 500;
       padding: 1.5rem;
@@ -97,12 +113,9 @@
           padding: 0 0 15px 0;
           font-weight: 700;
         ">Payment Mode:</span>
-        <span style="text-align: right;">$PaymentMode$</span>
+        <span style="float: right;">$PaymentMode$</span>
     </div>
     <div style="
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
       font-size: 17px;
       font-weight: 500;
       padding: 1.5rem;
@@ -111,15 +124,13 @@
       margin-top: 5px;
     ">
         <span style="
+          text-align: left;
           padding: 0 0 15px 0;
           font-weight: 700;
         ">Card Type:</span>
-        <span style="text-align: right;">$CardName</span>
+        <span style="float: right;">$CardName</span>
     </div>
     <div style="
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
       font-size: 17px;
       font-weight: 500;
       padding: 1.5rem;
@@ -128,15 +139,13 @@
       margin-top: 5px;
     ">
         <span style="
+          text-align: left;
           padding: 0 0 15px 0;
           font-weight: 700;
         ">Request Amount:</span>
-        <span style="text-align: right;">$Amount$</span>
+        <span style="float: right;">$Amount$</span>
     </div>
-        <div style="
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
+    <div style="
       font-size: 17px;
       font-weight: 500;
       padding: 1.5rem;
@@ -145,15 +154,13 @@
       margin-top: 5px;
     ">
         <span style="
+          text-align: left;
           padding: 0 0 15px 0;
           font-weight: 700;
         ">Amount Paid:</span>
-        <span style="text-align: right;">$Amount$</span>
+        <span style="float: right;">$Amount$</span>
     </div>
     <div style="
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
       font-size: 17px;
       font-weight: 700;
       padding: 1.5rem;
@@ -165,7 +172,7 @@
           padding: 0 0 15px 0;
           font-weight: 700;
         ">Payment Status:</span>
-        <span>$statusMessage$</span>
+        <span style="float: right;">$statusMessage$</span>
     </div>
   </div>
   <div style="text-align: center; width: 100%; margin: 1.7rem 0;">
