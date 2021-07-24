@@ -6,73 +6,13 @@
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     box-sizing: border-box;
   ">
-  <h2>Dear $Name$</h2>
+  <h2>Dear Vendor [$CompanyName$]</h2>
   <p style="font-size: 16px; margin-bottom: 1rem;">
-    Thank you for your payment. We have recieved your payment of
+    Your Customer [$FullName$] had paid of
     <span style="font-family:Aerial; white-space: nowrap;">₹ $Amount$</span>
     <span style="color: #62ff54; font-weight: 600;">$statusMessage$</span>. 
-    Your payment transaction ID is <span style="font-weight: bold;">$TranxId$</span>
+    with Transaction ID was <span style="font-weight: bold;">$TranxId$</span>
   </p>
-
-  <div style="
-    position: relative;
-    margin: 1.8rem 0;
-    border-top: 3px solid #800080;
-    padding: 1.5rem 10px;
-    font-size: 16px;
-    box-sizing: border-box;
-  ">
-    <div style="
-      float: left;
-      width: 100px;
-      color: #5e5b5b;
-    ">
-        <span style="
-          text-align: center;
-          display: block;
-          color: #39393b;
-          font-weight: bold;
-          margin-bottom: 10px;">
-          Bank Ref No
-        </span>
-        <span style="
-          overflow-wrap: anywhere;
-          text-align: center;
-          display: block;">
-            $BankRefId$
-        </span>
-    </div>
-    <div style="
-      display: inline-block;
-      color: #5e5b5b;
-      margin-left: 10px;
-      padding: 0 15px;
-    ">
-        <span style="
-          display: block;
-          text-align: center;
-          color: #39393b;
-          font-weight: bold;
-          margin-bottom: 10px;">
-          Payment Request Date
-        </span>
-        <span style="text-align: center; display: block;">$ReqTranxDate$</span>                        
-    </div>
-    <div style="
-      float: right;
-      color: #5e5b5b;
-    ">
-        <span style="
-          text-align: center;
-          display: block;
-          color: #39393b;
-          font-weight: bold;
-          margin-bottom: 10px;">
-          Transaction Date
-        </span>
-        <span style="text-align: center; display: block;">$TranxDate$</span>                        
-    </div>
-  </div>
 
   <h3 style="
     margin-top: -1rem;
@@ -81,7 +21,7 @@
     font-size: 18px;
     padding: 1.5rem 0 .6rem 0;
   ">
-    Transaction Summary
+    Customer Summary
   </h3>
   <div>
     <div style="
@@ -95,10 +35,10 @@
         <span style="
           padding: 0 0 15px 0;
           font-weight: 700;
-        ">Order Id:</span>
-        <span style="float: right;">$TrackingId$</span>
+        ">First Name:</span>
+        <span style="float: right;">$FirstName$</span>
     </div>
-    <div style="
+	 <div style="
       font-size: 16px;
       font-weight: 500;
       padding: 1.5rem;
@@ -109,9 +49,76 @@
         <span style="
           padding: 0 0 15px 0;
           font-weight: 700;
-        ">Payment Mode:</span>
-        <span style="float: right;">$PaymentMode$</span>
+        ">Last Name:</span>
+        <span style="float: right;">$LastName$</span>
     </div>
+	 <div style="
+      font-size: 16px;
+      font-weight: 500;
+      padding: 1.5rem;
+      background-color: #e6e6e6;
+      border-radius: 4px;
+      margin-top: 5px;
+    ">
+        <span style="
+          padding: 0 0 15px 0;
+          font-weight: 700;
+        ">Email Address:</span>
+        <span style="float: right;">$EmailAddress$</span>
+    </div>
+	 <div style="
+      font-size: 16px;
+      font-weight: 500;
+      padding: 1.5rem;
+      background-color: #e6e6e6;
+      border-radius: 4px;
+      margin-top: 5px;
+    ">
+        <span style="
+          padding: 0 0 15px 0;
+          font-weight: 700;
+        ">Mobile Number:</span>
+        <span style="float: right;">$MobileNumber$</span>
+    </div>
+	 <div style="
+      font-size: 16px;
+      font-weight: 500;
+      padding: 1.5rem;
+      background-color: #e6e6e6;
+      border-radius: 4px;
+      margin-top: 5px;
+    ">
+        <span style="
+          padding: 0 0 15px 0;
+          font-weight: 700;
+        ">Customer Note:</span>
+        <span style="float: right;">$CustomerNote$</span>
+    </div>
+	</div>
+	<h3 style="
+    margin-top: -1rem;
+    border-top: 3px solid #800080;
+    padding-top: 1.5rem;
+    font-size: 18px;
+    padding: 1.5rem 0 .6rem 0;
+  ">
+    Transaction Summary
+  </h3>
+   <div style="
+      font-size: 16px;
+      font-weight: 500;
+      padding: 1.5rem;
+      background-color: #e6e6e6;
+      border-radius: 4px;
+      margin-top: 5px;
+    ">
+        <span style="
+          padding: 0 0 15px 0;
+          font-weight: 700;
+        ">Order Id:</span>
+        <span style="float: right;">$RequestId$</span>
+    </div>
+   
     <div style="
       font-size: 16px;
       font-weight: 500;
@@ -124,8 +131,8 @@
           text-align: left;
           padding: 0 0 15px 0;
           font-weight: 700;
-        ">Card Type:</span>
-        <span style="float: right;">$CardName</span>
+        ">Card Number To Use:</span>
+        <span style="float: right;">$CardNumberToUse$</span>
     </div>
     <div style="
       font-size: 16px;
@@ -171,20 +178,5 @@
         ">Payment Status:</span>
         <span style="float: right;">$statusMessage$</span>
     </div>
-  </div>
-  <div style="text-align: center; width: 100%; margin: 1.7rem 0;">
-    <a href="https://trans.23434" target="_blank" style="
-      background-color: dodgerblue;
-      border: 2px solid dodgerblue;
-      border-radius: 8px;
-      padding: 10px;
-      cursor: pointer;
-      width: 250px;
-      text-decoration: none;
-      color: #fff;
-      font-size: 17px;
-    ">
-      View Transaction
-    </a>
   </div>
 </div>
