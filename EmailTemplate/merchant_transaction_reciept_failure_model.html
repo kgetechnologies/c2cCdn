@@ -6,7 +6,7 @@
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     box-sizing: border-box;
   ">
-  <h2>Dear Vendor [$CompanyName$]</h2>
+  <b><h2>Dear Vendor [$CompanyName$]</h2></b>
   <p style="font-size: 17px; margin-bottom: 1rem;">
      Your Customer [$FullName$] payment of 
     <span style="font-family:Aerial; white-space: nowrap;">₹ $Amount$</span>
@@ -131,8 +131,46 @@
           text-align: left;
           padding: 0 0 15px 0;
           font-weight: 700;
-        ">Card Number To Use:</span>
-        <span style="float: right;">$CardNumberToUse$</span>
+        ">Bank Ref No:</span>
+        <span style="float: right;">$bank_ref_no$</span>
+    </div>
+    <div style="
+      font-size: 16px;
+      font-weight: 500;
+      padding: 1.5rem;
+      background-color: #e6e6e6;
+      border-radius: 4px;
+      margin-top: 5px;
+    ">
+	 <div style="
+      font-size: 16px;
+      font-weight: 500;
+      padding: 1.5rem;
+      background-color: #e6e6e6;
+      border-radius: 4px;
+      margin-top: 5px;
+    ">
+        <span style="
+          text-align: left;
+          padding: 0 0 15px 0;
+          font-weight: 700;
+        ">Card Name:</span>
+        <span style="float: right;">$card_name$</span>
+    </div>
+	<div style="
+      font-size: 16px;
+      font-weight: 500;
+      padding: 1.5rem;
+      background-color: #e6e6e6;
+      border-radius: 4px;
+      margin-top: 5px;
+    ">
+        <span style="
+          text-align: left;
+          padding: 0 0 15px 0;
+          font-weight: 700;
+        ">Payment Mode:</span>
+        <span style="float: right;">$payment_mode$</span>
     </div>
     <div style="
       font-size: 16px;
@@ -164,6 +202,22 @@
         ">Amount Paid:</span>
         <span style="float: right;">$Amount$</span>
     </div>
+	   <div style="
+      font-size: 16px;
+      font-weight: 500;
+      padding: 1.5rem;
+      background-color: #e6e6e6;
+      border-radius: 4px;
+      margin-top: 5px;
+    ">
+        <span style="
+          text-align: left;
+          padding: 0 0 15px 0;
+          font-weight: 700;
+        ">Failure Message:</span>
+        <span style="float: right;">$FailureMessage$</span>
+    </div>
+	
     <div style="
       font-size: 16px;
       font-weight: 700;
