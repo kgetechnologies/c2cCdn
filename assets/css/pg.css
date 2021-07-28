@@ -30,6 +30,11 @@
   margin: 0 20px;
 }
 
+.pricing-container .svg-icon {
+  height: 160px;
+  margin-top: -20px;
+}
+
 .primary-footer .nav {
   justify-content: center;
 }
