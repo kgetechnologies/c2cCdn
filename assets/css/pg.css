@@ -39,12 +39,23 @@
   margin-bottom: 20px !important;
 }
 
+.primary-footer {
+  border-top: 1.5px solid #ddd;
+  padding: 12px 1rem !important;
+  font-family: 'poppins';
+}
+
 .primary-footer .nav {
   justify-content: center;
 }
 
 .primary-footer a {
   font-size: 15px;
+  color: #7E8299;
+}
+
+.primary-footer a:hover {
+  color: #3699ff;
 }
 
 .primary-footer .copyright {
