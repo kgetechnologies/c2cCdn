@@ -96,6 +96,6 @@ $(document).ready(function () {
     }, 5000);
   }
 
-  btn.addEventListener('click', save_div);
-  copy_tranx.addEventListener('click', copy_tranx_to_clipboard);
+  btn?.addEventListener('click', save_div);
+  copy_tranx?.addEventListener('click', copy_tranx_to_clipboard);
 });
